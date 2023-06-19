@@ -1,0 +1,273 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif;
+}
+body,
+html {
+  height: 100%;
+}
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  text-align: center;
+}
+
+header {
+  background-color: #333;
+  color: #fff;
+  padding: 10px;
+}
+
+.nav-text {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  font-size: 30px;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.logo {
+  width: 75px;
+  cursor: pointer;
+}
+
+nav ul li {
+  display: inline-block;
+  list-style: none;
+  margin: 10px 20px;
+}
+
+nav ul li a {
+  color: #fff;
+  text-decoration: none;
+  font-size: 18px;
+  position: relative;
+}
+
+nav ul li a::after {
+  content: "";
+  width: 0;
+  height: 3px;
+  background: #9838e1;
+  position: absolute;
+  left: 0;
+  bottom: -6px;
+  transition: width 0.3s;
+}
+
+nav ul li a:hover::after {
+  width: 100%;
+}
+
+#hero {
+  background-image: url("images/hero-image.jpg");
+  background-size: cover;
+  background-position: center;
+  height: 90%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  color: #fff;
+}
+
+.hero-text {
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.hero-text h1 {
+  font-size: 48px;
+  margin-bottom: 20px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+.hero-text p {
+  font-size: 20px;
+  margin-bottom: 30px;
+}
+
+.btn {
+  display: inline-block;
+  padding: 12px 24px;
+  background-color: #9838e1;
+  color: #fff;
+  border-radius: 4px;
+  margin-bottom: 20px;
+  font-size: 18px;
+  text-decoration: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn:hover {
+  background-color: #5f1a94;
+}
+
+.btn:active{
+  box-shadow: 2px 2px 5px #290743;
+}
+
+#about {
+  background-color: #f2f2f2;
+  padding: 40px 0;
+}
+
+#about h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+#destinations {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 40px 0;
+  flex-direction: column;
+}
+
+#destinations .container {
+  text-align: center;
+}
+
+.destination-card {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.destination-card img {
+  width: 100%;
+  max-height: 200px;
+  object-fit: cover;
+  border-radius: 4px;
+  margin-bottom: 10px;
+}
+
+.destination-card h3 {
+  font-size: 24px;
+  margin-bottom: 10px;
+}
+
+.destination-card p {
+  font-size: 16px;
+}
+
+#destinations h2{
+  font-size: 32px;
+}
+
+#contact {
+  background-color: #e6e6e6;
+  padding: 40px 0;
+}
+
+#contact h2 {
+  margin-bottom: 30px;
+  font-size: 32px;
+}
+
+form {
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+input,
+textarea,select {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 20px;
+  border-radius: 4px;
+  border: 1px solid #ccc;
+}
+
+.opt{
+  color:#4b4a4a;
+  width: 105%;
+}
+
+.more a{
+  text-decoration: none;
+  color: white;
+}
+
+.seemore{
+  border: none;
+}
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer p {
+  margin: 0;
+}
+
+
+
+.bgimg-1,
+.bgimg-2,
+.bgimg-3,
+.bgimg-4 {
+  position: relative;
+  opacity: 0.9;
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.bgimg-1 {
+  background-image: url("images/about.jpg");
+  min-height: 70%;
+}
+
+.bgimg-2 {
+  background-image: url("images/destination1.jpg");
+  min-height: 400px;
+}
+
+.bgimg-3 {
+  background-image: url("images/destination2.jpg");
+  min-height: 400px;
+}
+
+.bgimg-4 {
+  background-image: url("images/destination3.jpg");
+  opacity: 0.99;
+  min-height: 400px;
+}
+
+.p-container {
+  color: #ddd;
+  background-color: #282e34;
+  text-align: center;
+  padding: 50px 80px;
+}
+.p-container-about {
+  color: #4b4a4a;
+  background-color: #eceff2;
+}
+.card {
+  position: relative;
+}
+
+/* @media only screen and (max-device-width: 1024px) {
+  .bgimg-1,
+  .bgimg-2,
+  .bgimg-3,
+  .bgimg-4 {
+    background-attachment: scroll;
+  }
+} */
