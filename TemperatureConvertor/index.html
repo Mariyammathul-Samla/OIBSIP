@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <title>Temperature Converter</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <h1>Temperature Converter</h1>
+
+            <div class="input-container">
+                <input type="number" id="temperature" placeholder="Enter temperature">
+                <select id="unitFrom">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="input-container">
+                <input type="text" id="convertedTemperature" readonly>
+                <select id="unitTo">
+                    <option value="celsius">Celsius</option>
+                    <option value="fahrenheit">Fahrenheit</option>
+                    <option value="kelvin">Kelvin</option>
+                </select>
+            </div>
+
+            <div class="button-container">
+                <button onclick="convertTemperature()">Convert</button>
+                <button onclick="clearFields()">Clear</button>
+                <button onclick="swapUnits()">Swap</button>
+            </div>
+
+            <div id="error-message" class="error-message"></div>
+
+            <div class="conversion-history-container">
+                <button id="show-history-button" onclick="toggleHistory()">Show History</button>
+                <ul id="conversion-history" class="conversion-history"></ul>
+                <button id="clear-history-button" onclick="clearHistory()" style="display: none;">Clear History</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
